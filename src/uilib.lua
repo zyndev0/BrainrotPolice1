@@ -459,7 +459,7 @@ function uilib:Tab(tabName, tabIco)
     TabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TabTitle.Parent = TabBtn
     applyFont(
-        btnlbl,
+        TabTitle,
         "georgia",
         Enum.FontWeight.Regular,
         Enum.FontStyle.Normal
