@@ -13,9 +13,9 @@ return function(section)
         local char = plr.Character
         for _, br in pairs(where:GetChildren()) do
             char:MoveTo(br.PrimaryPart.Position)
-            task.wait(0.5)
+            task.wait(0.2)
             fireproximityprompt(br.PrimaryPart.ProximityPrompt)
-            task.wait(1.6)
+            task.wait(0.1)
             char:MoveTo(Vector3.new(-2, 4, 13))
             task.wait(0.5)
         end
