@@ -117,5 +117,6 @@ local gamePath = game:HttpGet(getgitpath("games") .. tostring(game.PlaceId) .. "
 if #gamePath == 0 then
     print("Unsupported")
 else
-    local gameWorks = loadstring(gamePath)(Sections.Game.Container)
+    local gameModule = loadstring(gamePath)()
+    gameModule(Sections.Game.Container)
 end
