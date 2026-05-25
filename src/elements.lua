@@ -48,4 +48,18 @@ function stuff:Textbox(str, king, cb)
     end)
 end
 
+function stuff:Unsupported(king, cb)
+    local newUs = elements.unsupportElement:Clone()
+    newUs.Parent = king
+
+    newUs.suggestbtn.MouseButton1Click:Connect(function()
+        setclipboard("https://discord.gg/vaehz")
+        newUs.suggestbtn.Text = "Copied Link!"
+        wait(1)
+        newUs.suggestbtn.Text = "Suggest Game"
+    end)
+
+    newUs.glbtn.MouseButton1Click:Connect(cb)
+end
+
 return stuff
