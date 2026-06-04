@@ -32,7 +32,7 @@
   {
     "game": "Fly for brainrots",
     "id": "74277864669743",
-    "status": "🟡"
+    "status": "🟢"
   },
   {
     "game": "Sail for Brainrots",
@@ -57,6 +57,11 @@
   {
     "game": "Dream for brainrots",
     "id": "135882949571046",
+    "status": "🟢"
+  },
+  {
+    "game": "+1 Wings for Brainrots",
+    "id": "84332574190497",
     "status": "🟢"
   }
 ]
